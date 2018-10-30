@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #EEEEEE;
+}
+.cardLeft{
+    color: #424242;    
+    display: flex;
+    flex-direction: column;
+    margin-top:5%;
+    margin-bottom:0%;
+    margin-left: 5%;
+    margin-right: 0%;
+    padding: 5%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+}
+.cardRight{
+    color: #424242;  
+    display: flex;
+    flex-direction: column;
+    margin-top:5%;
+    margin-bottom:0%;
+    margin-left: 0%;
+    margin-right: 5%;
+    padding: 5%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+}
+.cardCenter{
+    color: #424242;  
+    display: flex;
+    flex-direction: column;
+    margin-top:5%;
+    margin-bottom:0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.contenedorMadre{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
