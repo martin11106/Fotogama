@@ -53,7 +53,7 @@
             <div class="col">
                 <form action="reportegeneral/1" method="get">
                     <button type="submit" class="btn btn-raised btn-primary">
-                        <img src="../../images/money.png" alt="" class="img-fluid">
+                        <img src="../../images/bookmark.png" alt="" class="img-fluid">
                         <h2 class="h4" align="center">Ver reportajes</h2>
                     </button>   
                 </form>
