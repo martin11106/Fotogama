@@ -29,31 +29,29 @@
                 <th>Apellido Paterno</th>
                 <th>Apellido Materno</th>
                 <th>Nivel</th>
-
-                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
-                @foreach ( $fotografo as $item)
-            @if($item->estado == 'aceptado')
-            <tr>
+            @foreach ( $fotografo as $item)
+                @if($item->estado == 'aceptado')
+                    <tr>
 
-                <tr>
-            <th>{{$item->nombre}}</th>
-            <th>{{$item->apellidoPaterno}}</th>
-            <th>{{$item->apellidoMaterno}}</th>
-            <th>{{$item->nivel}}</th>
-                <th>
-                <a class ="btn btn-primary" href="subirFotografo/{{$item->id}}">Subir</a>
-                <a class="btn btn-primary" href="bajarFotografo/{{$item->id}}">Bajar</a>
-                <a class="btn btn-danger" href="eliminar-fotografo/{{$item->id}}">eliminar</a>
-                </th>
+                        <tr>
+                    <th>{{$item->nombre}}</th>
+                    <th>{{$item->apellidoPaterno}}</th>
+                    <th>{{$item->apellidoMaterno}}</th>
+                    <th>{{$item->nivel}}</th>
+                        <th>
+                        <a class ="btn btn-primary" href="subirFotografo/{{$item->id}}">Subir nivel</a>
+                        <a class="btn btn-primary" href="bajarFotografo/{{$item->id}}">Bajar nivel</a>
+                        <a class="btn btn-danger" href="eliminar-fotografo/{{$item->id}}">eliminar</a>
+                        </th>
 
 
-            </tr>
+                    </tr>
 
-            @endif
-                            @endforeach
+                @endif
+            @endforeach
         </tbody>
     </table>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

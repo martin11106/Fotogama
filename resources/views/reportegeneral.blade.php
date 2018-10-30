@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>REPORTES</title>
+    <title>Reportajes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -17,49 +17,48 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <span class="navbar-brand mb-0 h1">Reportes</span>
+                    <span class="navbar-brand mb-0 h1">Reportajes</span>
                 </li>
             </ul>
         </div>
     </nav>
-<br><br>
-    <table class="table table-striped table-dark">
-        <thead class="thead-dark">
-            <tr>
-                <th scope="col">Id</th>                
-                {{-- nombre completo --}}
-                <th scope="col">Titulo</th>
-                <th scope="col">Descripcion</th>
-                <th scope="col">Categoria</th>       
-                <th scope="col">Editorial</th>            
-                <th scope="col">Acciones</th>  
-            </tr>
-        </thead>
-    
-    
-        <tbody>
-            @if(count($reportes)>=1)
-            
-                @foreach ($reportes as $item)                
-                    <tr>
-                    <td scope="col">{{$item->id}}</td>              
-                    <td scope="col">{{$item->titulo}}</td>
-                    <td scope="col">{{$item->descripcion}}</td>
-                    <td scope="col">{{$item->categoria}}</td>
-                    <td scope="col">{{$item->editorial_id}}</td>
+<br>
+    @if(count($reportes)>=1)
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Titulo</th>
+                    <th>Descripcion</th>
+                    <th>Categoria</th>       
+                    <th>Editorial</th>   
+                </tr>
+            </thead>
+        
+        
+            <tbody>
+                    @foreach ($reportes as $item)                
+                        <tr>
+                            <td>{{$item->id}}</td>              
+                            <td>{{$item->titulo}}</td>
+                            <td>{{$item->descripcion}}</td>
+                            <td>{{$item->categoria}}</td>
+                            <td>{{$item->editorial_id}}</td>
 
-                    <td>
-                        <a class="btn btn-primary" href="/enviarfotos/{{$item->id}}/{{$id}}">Enviar fotografias</a>                        
-                    </td>
-                    </tr>
-                @endforeach                                    
-
-                
-            @else
-                <h1>No hay elementos</h1>
-            @endif
-                        
-        </tbody>
-    </table>    
+                            <td>
+                                <a class="btn btn-primary" href="/enviarfotos/{{$item->id}}/{{$id}}">Enviar fotografias</a>                        
+                            </td>
+                        </tr>
+                    @endforeach              
+                            
+            </tbody>
+        </table> 
+    @else
+        <h6>SIN REGISTROS</h6>
+    @endif   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
 </body>
 </html>

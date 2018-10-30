@@ -30,12 +30,12 @@
                 <h4>Solicitudes fotográfos</h4> </a>
             </div>
             <div class="cardCenter">
-            <a href=""><i class="material-icons">assignment</i> 
-                <h4>Solicitudes suscripciones</h4></a> 
+                <a href="/verLista"><i class="material-icons">camera_enhance</i>
+                <h4>Fotógrafos</h4> </a>
             </div>
             <div class="cardRight"> 
-            <a href="/verLista"><i class="material-icons">camera_enhance</i>
-                <h4>Fotógrafos</h4> </a>
+                <a href=""><i class="material-icons">subscriptions</i>
+                <h4>Suscripciones</h4> </a>
             </div>
         </div>
         <div class="contenedor">
@@ -50,11 +50,7 @@
             <div class="cardRight">
             <a href=""><i class="material-icons">monetization_on</i> 
                 <h4>Venta</h4> </a>
-            </div>
-            <div class="cardRight"> 
-                <a href=""><i class="material-icons">subscriptions</i>
-                    <h4>Sucripciones</h4> </a>
-                </div>  
+            </div>  
         </div>
         <div class="contenedor">
                 
