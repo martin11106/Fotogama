@@ -28,9 +28,10 @@
     </nav>
     <br>
     <div class="create">
+        <div class="container">
         <div class="row">
             <div class="col"></div>
-            <div class="col">
+        <!--     <div class="col">
                 <div class="media">
                     <form action="agregar-fotografia" method="get">
                         <button type="submit" class="btn btn-raised btn-primary">
@@ -39,7 +40,7 @@
                         </button>
                     </form>
                 </div>
-            </div>
+            </div> -->
             <div class="col">
                 <div class="media">
                     <form action="ventas" method="get">
@@ -50,6 +51,7 @@
                     </form>
                 </div>
             </div>
+            <div class="col"></div>
             <div class="col">
                 <form action="reportegeneral/1" method="get">
                     <button type="submit" class="btn btn-raised btn-primary">
@@ -59,6 +61,7 @@
                 </form>
             </div>
             <div class="col"></div>
+        </div>
         </div>
     </div>
 
