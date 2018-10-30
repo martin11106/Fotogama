@@ -64,7 +64,7 @@
                         <label for="rutaCurriculum" class="bmd-label-floating">Ruta de curriculum</label>
                         <input type="text" name="rutaCurriculum" class="form-control" id="rutaCurriculum">
                     </div>
-                    <button type="submit" class="btn btn-raised btn-primary">Añadir</button>
+                    <button type="submit" class="btn btn-raised btn-primary">Registrar</button>
                 </form>
             </div>
         </div>

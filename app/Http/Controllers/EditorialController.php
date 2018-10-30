@@ -27,7 +27,7 @@ class EditorialController extends Controller
         $editorial->estadoA='aceptado';
         $editorial->save();
 
-        return redirect('/');
+        return redirect('/logineditorial');
     }
 
     public function validarEditorial(Request $request){

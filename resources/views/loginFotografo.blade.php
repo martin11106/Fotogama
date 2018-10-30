@@ -30,7 +30,7 @@
                     {{csrf_field()}}
                     <div class="form-group">
                         <label for="correo" class="bmd-label-floating">E-mail</label>
-                        <input type="text" name="correo" class="form-control" id="correo">
+                        <input type="email" name="correo" class="form-control" id="correo">
                     </div>
                     <div class="form-group">
                         <label for="passoword" class="bmd-label-floating">Contraseña</label>

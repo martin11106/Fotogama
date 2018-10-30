@@ -35,7 +35,7 @@
             </div>
             <div class="cardRight"> 
             <a href="/verLista"><i class="material-icons">camera_enhance</i>
-                <h4>  Fotografos</h4> </a>
+                <h4>Fotógrafos</h4> </a>
             </div>
         </div>
         <div class="contenedor">
@@ -45,7 +45,7 @@
             </div>
             <div class="cardCenter"> 
             <a href=""><i class="material-icons">account_balance_wallet</i>
-                <h4> Pagos</h4> </a>
+                <h4>Pagos</h4> </a>
             </div>
             <div class="cardRight">
             <a href=""><i class="material-icons">monetization_on</i> 

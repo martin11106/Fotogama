@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="/"><i class="material-icons">arrow_back</i></a>
+        <a class="navbar-brand" href="/logineditorial"><i class="material-icons">arrow_back</i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="form-group">
                         <label for="correo" class="bmd-label-floating">E-mail</label>
-                        <input type="text" name="correo" class="form-control" id="correo">
+                        <input type="email" name="correo" class="form-control" id="correo">
                     </div>
                     <div class="form-group">
                         <label for="password" class="bmd-label-floating">Contraseña</label>
@@ -48,10 +48,9 @@
                     </div>
                     <div class="form-group">
                             <label for="telefono" class="bmd-label-floating">Telefono</label>
-                            <input type="text" name="telefono" class="form-control" id="telefono">
+                            <input type="tel" name="telefono" class="form-control" id="telefono">
                         </div>
                     <button type="submit" class="btn btn-raised btn-primary">REGISTRARSE</button>
-                    <a  href="/logineditorial" class="btn btn-raised btn-primary">INICIAR SESION</a>
                 </form>
             </div>
         </div>

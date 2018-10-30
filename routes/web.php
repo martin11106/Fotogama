@@ -64,3 +64,4 @@ Route::get('solicitudes','FotografoController@getSolicitudes');
 Route::get('verLista','FotografoController@listaFotografos');
 Route::get('bajarFotografo/{id}','FotografoController@bajarFotografo');
 Route::get('subirFotografo/{id}','FotografoController@subirFotografo');
+Route::get('eliminar-fotografo/{id}','FotografoController@eliminar');

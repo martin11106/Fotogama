@@ -51,7 +51,7 @@ class FotografoController extends Controller
         $fotografo->telefono =  $request->telefono;
         $fotografo->direccion =  $request->direccion;
         $fotografo->rutaCurriculum =  $request->rutaCurriculum;
-        $fotografo->nivel =  '1';
+        $fotografo->nivel =  '0';
         $fotografo->estado =  'en espera';
         if($request->password == $request->password2){
             $fotografo->password =  $request->password;
@@ -96,18 +96,23 @@ class FotografoController extends Controller
         $fotografo = Fotografo::all();
 
         foreach ($fotografo as $item) {
-            if($item->email == $request->correo){
-                if($item->password == $request->password){
-                    return redirect('/fotografo');
+            if($item->estado==='en espera'){
+                return redirect('/login');
+            }
+            else{
+                if($item->email == $request->correo){
+                    if($item->password == $request->password){
+                        return redirect('/fotografo');
+                    }
+                    else{
+                        echo("<script> alert('incorrecto'); </script>");
+                        return redirect('/login');
+                    }
                 }
                 else{
                     echo("<script> alert('incorrecto'); </script>");
                     return redirect('/login');
                 }
-            }
-            else{
-                echo("<script> alert('incorrecto'); </script>");
-                return redirect('/login');
             }
         }
     }
@@ -122,6 +127,19 @@ class FotografoController extends Controller
         $fotografo->update();
         return redirect('solicitudes');
     }
+    public function eliminar($id){
+        $fotografo = Fotografo::find($id);
+        if($fotografo->estado==='en espera'){
+            $fotografo->delete();
+            return redirect('solicitudes');
+        }
+        else{
+            $fotografo->delete();
+            return redirect('/verLista');
+        }
+        
+    }
+
     public function listaFotografos(){
         $fotografo = Fotografo::all();
         return view('ListaFotografos',compact('fotografo'));

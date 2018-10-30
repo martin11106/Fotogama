@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <span class="navbar-brand mb-0 h1">Login Editorial</span>
+                    <span class="navbar-brand mb-0 h1">Iniciar sesión como editorial</span>
                 </li>
             </ul>
         </div>
@@ -28,13 +28,7 @@
         <div class="create">
             <div>
                 <form action="/validareditorial" method="post">
-                    
-                    <center>
-                        <legend>Login Editorial</legend>
-                        <i class="fas fa-book" style="font-size:6em"></i>
-                    </center>
                     {{csrf_field()}}
-
                     <div class="form-group">
                         <label for="correo" class="bmd-label-floating">E-mail</label>
                         <input type="text" name="correo" class="form-control" id="correo">

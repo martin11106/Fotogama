@@ -11,17 +11,20 @@
     <title>Inicio</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #008276;"">
-        <a href="/" class="nav-link" style="color: #FFFFFF;">Cerrar sesión</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/"><i class="material-icons">home</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <span class="navbar-brand mb-0 h1">Fotógrafo</span>
+                </li>
+                
+            </ul>
+            <a class="navbar-brand" href="#"><i class="material-icons">settings</i></a>
         </div>
-        <a href="" class="nav-link">
-            <img src="../../images/notification.png" alt="">
-        </a>
-        <a href="" class="nav-link" style="color: #FFFFFF;">
-            <img src="../../images/settings.png" alt="" class="rounded float-right" style="color: #FFFFFF;">
-        </a>
     </nav>
     <br>
     <div class="create">

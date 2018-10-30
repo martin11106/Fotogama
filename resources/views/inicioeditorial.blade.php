@@ -7,21 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <title>Inicio Editorial</title>
+    <title>Editorial</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #008276;">
-        <h2>{{$editorial->nombre}}  Editor   </h2>
-        <a class="navbar-brand" href="#"><img src="../../images/home.png" alt="home"></a>
-        <a class="btn btn-warning" href="/crearreporte/{{$editorial->id}}">Crear Reportaje</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/"><i class="material-icons">home</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-            
+                <li class="nav-item active">
+                    <span class="navbar-brand mb-0 h1">{{$editorial->nombre}}  Editor</span>
+                </li>
+                
+            </ul>
+            <a class="btn btn-primary" href="/crearreporte/{{$editorial->id}}" style="color: #FFFFFF">Crear Reportaje</a>
+            <a class="navbar-brand" href="#"><i class="material-icons">settings</i></a>
         </div>
-
-        <a href="/editareditorial/{{$editorial->id}}" class="nav-link" style="color: #FFFFFF;">
-            <img src="../../images/settings.png" alt="config" class="rounded float-right" style="color: #FFFFFF;">
-        </a>
     </nav>
     <br>
     <div class="container">
