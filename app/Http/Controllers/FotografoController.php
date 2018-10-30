@@ -96,11 +96,11 @@ class FotografoController extends Controller
         $fotografo = Fotografo::all();
 
         foreach ($fotografo as $item) {
-            if($item->estado==='en espera'){
-                return redirect('/login');
-            }
-            else{
-                if($item->email == $request->correo){
+            if($item->email == $request->correo){
+                if($item->estado==='en espera'){
+                    return redirect('/login');
+                }
+                else{
                     if($item->password == $request->password){
                         return redirect('/fotografo');
                     }
@@ -108,10 +108,6 @@ class FotografoController extends Controller
                         echo("<script> alert('incorrecto'); </script>");
                         return redirect('/login');
                     }
-                }
-                else{
-                    echo("<script> alert('incorrecto'); </script>");
-                    return redirect('/login');
                 }
             }
         }
