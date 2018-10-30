@@ -29,6 +29,9 @@
             <div>
                 <form action="/validareditorial" method="post">
                     {{csrf_field()}}
+                    <center>
+                        <i class="material-icons">layers</i>
+                    </center>
                     <div class="form-group">
                         <label for="correo" class="bmd-label-floating">E-mail</label>
                         <input type="text" name="correo" class="form-control" id="correo">

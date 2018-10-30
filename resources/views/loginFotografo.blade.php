@@ -28,6 +28,9 @@
             <div>
                 <form action="/verificarLogin" method="post">
                     {{csrf_field()}}
+                    <center>
+                        <i class="material-icons">camera_enhance</i>
+                    </center>
                     <div class="form-group">
                         <label for="correo" class="bmd-label-floating">E-mail</label>
                         <input type="email" name="correo" class="form-control" id="correo">

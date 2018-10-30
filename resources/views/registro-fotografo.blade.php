@@ -28,6 +28,9 @@
             <div>
                 <form action="guardar-fotografo" method="post">
                     {{csrf_field()}}
+                    <center>
+                        <i class="material-icons">camera_enhance</i>
+                    </center>
                     <div class="form-group">
                         <label for="nombre" class="bmd-label-floating">Nombre</label>
                         <input type="text" name="nombre" class="form-control" id="nombre">

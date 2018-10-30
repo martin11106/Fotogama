@@ -28,12 +28,10 @@
         <div class="create">
             <div>
                 <form action="/guardareditorial" method="post">
-                    
-                    <center>
-                        <legend>Registro Editorial</legend>
-                        <i class="fas fa-book" style="font-size:6em"></i>
-                    </center>
                     {{csrf_field()}}
+                    <center>
+                        <i class="material-icons">layers</i>
+                    </center>
                     <div class="form-group">
                             <label for="nombre" class="bmd-label-floating">Nombre</label>
                             <input type="text" name="nombre" class="form-control" id="nombre">
