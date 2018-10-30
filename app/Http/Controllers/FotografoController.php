@@ -111,6 +111,7 @@ class FotografoController extends Controller
                 }
             }
         }
+        return redirect('/login');
     }
 
     public function getSolicitudes(){
